@@ -1,0 +1,502 @@
+version: 2
+updates:
+  # - package-ecosystem: "github-actions"
+  #   directory: "/"
+  #   schedule:
+  #     interval: "weekly"
+  #     day: "monday"
+  #     time: "06:00"
+  #     timezone: "Etc/UTC"
+  #   open-pull-requests-limit: 5
+  #   labels:
+  #     - "dependencies"
+  #     - "ci"
+  #   groups:
+  #     github-actions:
+  #       patterns:
+  #         - "*"
+
+  # - package-ecosystem: "npm"
+  #   directory: "/nodejs"
+  #   schedule:
+  #     interval: "weekly"
+  #     day: "monday"
+  #     time: "06:10"
+  #     timezone: "Etc/UTC"
+  #   open-pull-requests-limit: 5
+  #   labels:
+  #     - "dependencies"
+  #     - "nodejs"
+  #   groups:
+  #     npm:
+  #       patterns:
+  #         - "*"
+
+  - package-ecosystem: "pip"
+    directory: "/python"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "06:20"
+      timezone: "Etc/UTC"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+      - "python"
+    groups:
+      pip:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "pip"
+    directory: "/python-fastapi"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "06:25"
+      timezone: "Etc/UTC"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+      - "python"
+    groups:
+      pip:
+        patterns:
+          - "*"
+
+  # - package-ecosystem: "bundler"
+  #   directory: "/ruby"
+  #   schedule:
+  #     interval: "weekly"
+  #     day: "monday"
+  #     time: "06:30"
+  #     timezone: "Etc/UTC"
+  #   open-pull-requests-limit: 5
+  #   labels:
+  #     - "dependencies"
+  #     - "ruby"
+  #   groups:
+  #     bundler:
+  #       patterns:
+  #         - "*"
+
+  # - package-ecosystem: "composer"
+  #   directory: "/php7"
+  #   schedule:
+  #     interval: "weekly"
+  #     day: "monday"
+  #     time: "06:35"
+  #     timezone: "Etc/UTC"
+  #   open-pull-requests-limit: 5
+  #   labels:
+  #     - "dependencies"
+  #     - "php"
+  #   groups:
+  #     composer:
+  #       patterns:
+  #         - "*"
+
+  # - package-ecosystem: "maven"
+  #   directory: "/jvm"
+  #   schedule:
+  #     interval: "weekly"
+  #     day: "monday"
+  #     time: "06:40"
+  #     timezone: "Etc/UTC"
+  #   open-pull-requests-limit: 5
+  #   labels:
+  #     - "dependencies"
+  #     - "java"
+  #   groups:
+  #     maven:
+  #       patterns:
+  #         - "*"
+
+  # - package-ecosystem: "maven"
+  #   directory: "/jvm-jersey"
+  #   schedule:
+  #     interval: "weekly"
+  #     day: "monday"
+  #     time: "06:45"
+  #     timezone: "Etc/UTC"
+  #   open-pull-requests-limit: 5
+  #   labels:
+  #     - "dependencies"
+  #     - "java"
+  #   groups:
+  #     maven:
+  #       patterns:
+  #         - "*"
+
+  # - package-ecosystem: "nuget"
+  #   directory: "/dotnet"
+  #   schedule:
+  #     interval: "weekly"
+  #     day: "monday"
+  #     time: "06:50"
+  #     timezone: "Etc/UTC"
+  #   open-pull-requests-limit: 5
+  #   labels:
+  #     - "dependencies"
+  #     - "dotnet"
+  #   groups:
+  #     nuget:
+  #       patterns:
+  #         - "*"
+
+  # - package-ecosystem: "nuget"
+  #   directory: "/dotnet20"
+  #   schedule:
+  #     interval: "weekly"
+  #     day: "monday"
+  #     time: "06:55"
+  #     timezone: "Etc/UTC"
+  #   open-pull-requests-limit: 5
+  #   labels:
+  #     - "dependencies"
+  #     - "dotnet"
+  #   groups:
+  #     nuget:
+  #       patterns:
+  #         - "*"
+
+  # - package-ecosystem: "nuget"
+  #   directory: "/dotnet8"
+  #   schedule:
+  #     interval: "weekly"
+  #     day: "monday"
+  #     time: "07:00"
+  #     timezone: "Etc/UTC"
+  #   open-pull-requests-limit: 5
+  #   labels:
+  #     - "dependencies"
+  #     - "dotnet"
+  #   groups:
+  #     nuget:
+  #       patterns:
+  #         - "*"
+
+  # - package-ecosystem: "docker"
+  #   directory: "/binary"
+  #   schedule:
+  #     interval: "monthly"
+  #   open-pull-requests-limit: 3
+  #   labels:
+  #     - "dependencies"
+  #     - "docker"
+  #   groups:
+  #     docker:
+  #       patterns:
+  #         - "*"
+
+  # - package-ecosystem: "docker"
+  #   directory: "/binary/builder"
+  #   schedule:
+  #     interval: "monthly"
+  #   open-pull-requests-limit: 3
+  #   labels:
+  #     - "dependencies"
+  #     - "docker"
+  #   groups:
+  #     docker:
+  #       patterns:
+  #         - "*"
+
+  # - package-ecosystem: "docker"
+  #   directory: "/dotnet"
+  #   schedule:
+  #     interval: "monthly"
+  #   open-pull-requests-limit: 3
+  #   labels:
+  #     - "dependencies"
+  #     - "docker"
+  #   groups:
+  #     docker:
+  #       patterns:
+  #         - "*"
+
+  # - package-ecosystem: "docker"
+  #   directory: "/dotnet20"
+  #   schedule:
+  #     interval: "monthly"
+  #   open-pull-requests-limit: 3
+  #   labels:
+  #     - "dependencies"
+  #     - "docker"
+  #   groups:
+  #     docker:
+  #       patterns:
+  #         - "*"
+
+  # - package-ecosystem: "docker"
+  #   directory: "/dotnet20/builder"
+  #   schedule:
+  #     interval: "monthly"
+  #   open-pull-requests-limit: 3
+  #   labels:
+  #     - "dependencies"
+  #     - "docker"
+  #   groups:
+  #     docker:
+  #       patterns:
+  #         - "*"
+
+  # - package-ecosystem: "docker"
+  #   directory: "/dotnet8"
+  #   schedule:
+  #     interval: "monthly"
+  #   open-pull-requests-limit: 3
+  #   labels:
+  #     - "dependencies"
+  #     - "docker"
+  #   groups:
+  #     docker:
+  #       patterns:
+  #         - "*"
+
+  # - package-ecosystem: "docker"
+  #   directory: "/dotnet8/builder"
+  #   schedule:
+  #     interval: "monthly"
+  #   open-pull-requests-limit: 3
+  #   labels:
+  #     - "dependencies"
+  #     - "docker"
+  #   groups:
+  #     docker:
+  #       patterns:
+  #         - "*"
+
+  # - package-ecosystem: "docker"
+  #   directory: "/go"
+  #   schedule:
+  #     interval: "monthly"
+  #   open-pull-requests-limit: 3
+  #   labels:
+  #     - "dependencies"
+  #     - "docker"
+  #   groups:
+  #     docker:
+  #       patterns:
+  #         - "*"
+
+  # - package-ecosystem: "docker"
+  #   directory: "/go/builder"
+  #   schedule:
+  #     interval: "monthly"
+  #   open-pull-requests-limit: 3
+  #   labels:
+  #     - "dependencies"
+  #     - "docker"
+  #   groups:
+  #     docker:
+  #       patterns:
+  #         - "*"
+
+  # - package-ecosystem: "docker"
+  #   directory: "/jvm"
+  #   schedule:
+  #     interval: "monthly"
+  #   open-pull-requests-limit: 3
+  #   labels:
+  #     - "dependencies"
+  #     - "docker"
+  #   groups:
+  #     docker:
+  #       patterns:
+  #         - "*"
+
+  # - package-ecosystem: "docker"
+  #   directory: "/jvm/builder"
+  #   schedule:
+  #     interval: "monthly"
+  #   open-pull-requests-limit: 3
+  #   labels:
+  #     - "dependencies"
+  #     - "docker"
+  #   groups:
+  #     docker:
+  #       patterns:
+  #         - "*"
+
+  # - package-ecosystem: "docker"
+  #   directory: "/jvm-jersey"
+  #   schedule:
+  #     interval: "monthly"
+  #   open-pull-requests-limit: 3
+  #   labels:
+  #     - "dependencies"
+  #     - "docker"
+  #   groups:
+  #     docker:
+  #       patterns:
+  #         - "*"
+
+  # - package-ecosystem: "docker"
+  #   directory: "/jvm-jersey/builder"
+  #   schedule:
+  #     interval: "monthly"
+  #   open-pull-requests-limit: 3
+  #   labels:
+  #     - "dependencies"
+  #     - "docker"
+  #   groups:
+  #     docker:
+  #       patterns:
+  #         - "*"
+
+  # - package-ecosystem: "docker"
+  #   directory: "/nodejs"
+  #   schedule:
+  #     interval: "monthly"
+  #   open-pull-requests-limit: 3
+  #   labels:
+  #     - "dependencies"
+  #     - "docker"
+  #   groups:
+  #     docker:
+  #       patterns:
+  #         - "*"
+
+  # - package-ecosystem: "docker"
+  #   directory: "/nodejs/builder"
+  #   schedule:
+  #     interval: "monthly"
+  #   open-pull-requests-limit: 3
+  #   labels:
+  #     - "dependencies"
+  #     - "docker"
+  #   groups:
+  #     docker:
+  #       patterns:
+  #         - "*"
+
+  # - package-ecosystem: "docker"
+  #   directory: "/perl"
+  #   schedule:
+  #     interval: "monthly"
+  #   open-pull-requests-limit: 3
+  #   labels:
+  #     - "dependencies"
+  #     - "docker"
+  #   groups:
+  #     docker:
+  #       patterns:
+  #         - "*"
+
+  # - package-ecosystem: "docker"
+  #   directory: "/php7"
+  #   schedule:
+  #     interval: "monthly"
+  #   open-pull-requests-limit: 3
+  #   labels:
+  #     - "dependencies"
+  #     - "docker"
+  #   groups:
+  #     docker:
+  #       patterns:
+  #         - "*"
+
+  # - package-ecosystem: "docker"
+  #   directory: "/php7/builder"
+  #   schedule:
+  #     interval: "monthly"
+  #   open-pull-requests-limit: 3
+  #   labels:
+  #     - "dependencies"
+  #     - "docker"
+  #   groups:
+  #     docker:
+  #       patterns:
+  #         - "*"
+
+  - package-ecosystem: "docker"
+    directory: "/python"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 3
+    labels:
+      - "dependencies"
+      - "docker"
+    groups:
+      docker:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "docker"
+    directory: "/python/builder"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 3
+    labels:
+      - "dependencies"
+      - "docker"
+    groups:
+      docker:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "docker"
+    directory: "/python-fastapi"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 3
+    labels:
+      - "dependencies"
+      - "docker"
+    groups:
+      docker:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "docker"
+    directory: "/python-fastapi/builder"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 3
+    labels:
+      - "dependencies"
+      - "docker"
+    groups:
+      docker:
+        patterns:
+          - "*"
+
+  # - package-ecosystem: "docker"
+  #   directory: "/ruby"
+  #   schedule:
+  #     interval: "monthly"
+  #   open-pull-requests-limit: 3
+  #   labels:
+  #     - "dependencies"
+  #     - "docker"
+  #   groups:
+  #     docker:
+  #       patterns:
+  #         - "*"
+
+  # - package-ecosystem: "docker"
+  #   directory: "/ruby/builder"
+  #   schedule:
+  #     interval: "monthly"
+  #   open-pull-requests-limit: 3
+  #   labels:
+  #     - "dependencies"
+  #     - "docker"
+  #   groups:
+  #     docker:
+  #       patterns:
+  #         - "*"
+
+  # - package-ecosystem: "docker"
+  #   directory: "/tensorflow-serving"
+  #   schedule:
+  #     interval: "monthly"
+  #   open-pull-requests-limit: 3
+  #   labels:
+  #     - "dependencies"
+  #     - "docker"
+  #   groups:
+  #     docker:
+  #       patterns:
+  #         - "*"
