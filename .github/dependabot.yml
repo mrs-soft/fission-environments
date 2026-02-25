@@ -179,7 +179,7 @@ updates:
   # - package-ecosystem: "docker"
   #   directory: "/binary"
   #   schedule:
-  #     interval: "monthly"
+  #     interval: "weekly"
   #   open-pull-requests-limit: 3
   #   labels:
   #     - "dependencies"
@@ -192,7 +192,7 @@ updates:
   # - package-ecosystem: "docker"
   #   directory: "/binary/builder"
   #   schedule:
-  #     interval: "monthly"
+  #     interval: "weekly"
   #   open-pull-requests-limit: 3
   #   labels:
   #     - "dependencies"
@@ -205,7 +205,7 @@ updates:
   # - package-ecosystem: "docker"
   #   directory: "/dotnet"
   #   schedule:
-  #     interval: "monthly"
+  #     interval: "weekly"
   #   open-pull-requests-limit: 3
   #   labels:
   #     - "dependencies"
@@ -218,7 +218,7 @@ updates:
   # - package-ecosystem: "docker"
   #   directory: "/dotnet20"
   #   schedule:
-  #     interval: "monthly"
+  #     interval: "weekly"
   #   open-pull-requests-limit: 3
   #   labels:
   #     - "dependencies"
@@ -231,7 +231,7 @@ updates:
   # - package-ecosystem: "docker"
   #   directory: "/dotnet20/builder"
   #   schedule:
-  #     interval: "monthly"
+  #     interval: "weekly"
   #   open-pull-requests-limit: 3
   #   labels:
   #     - "dependencies"
@@ -244,7 +244,7 @@ updates:
   # - package-ecosystem: "docker"
   #   directory: "/dotnet8"
   #   schedule:
-  #     interval: "monthly"
+  #     interval: "weekly"
   #   open-pull-requests-limit: 3
   #   labels:
   #     - "dependencies"
@@ -257,7 +257,7 @@ updates:
   # - package-ecosystem: "docker"
   #   directory: "/dotnet8/builder"
   #   schedule:
-  #     interval: "monthly"
+  #     interval: "weekly"
   #   open-pull-requests-limit: 3
   #   labels:
   #     - "dependencies"
@@ -270,7 +270,7 @@ updates:
   # - package-ecosystem: "docker"
   #   directory: "/go"
   #   schedule:
-  #     interval: "monthly"
+  #     interval: "weekly"
   #   open-pull-requests-limit: 3
   #   labels:
   #     - "dependencies"
@@ -283,7 +283,7 @@ updates:
   # - package-ecosystem: "docker"
   #   directory: "/go/builder"
   #   schedule:
-  #     interval: "monthly"
+  #     interval: "weekly"
   #   open-pull-requests-limit: 3
   #   labels:
   #     - "dependencies"
@@ -296,7 +296,7 @@ updates:
   # - package-ecosystem: "docker"
   #   directory: "/jvm"
   #   schedule:
-  #     interval: "monthly"
+  #     interval: "weekly"
   #   open-pull-requests-limit: 3
   #   labels:
   #     - "dependencies"
@@ -309,7 +309,7 @@ updates:
   # - package-ecosystem: "docker"
   #   directory: "/jvm/builder"
   #   schedule:
-  #     interval: "monthly"
+  #     interval: "weekly"
   #   open-pull-requests-limit: 3
   #   labels:
   #     - "dependencies"
@@ -322,7 +322,7 @@ updates:
   # - package-ecosystem: "docker"
   #   directory: "/jvm-jersey"
   #   schedule:
-  #     interval: "monthly"
+  #     interval: "weekly"
   #   open-pull-requests-limit: 3
   #   labels:
   #     - "dependencies"
@@ -335,7 +335,7 @@ updates:
   # - package-ecosystem: "docker"
   #   directory: "/jvm-jersey/builder"
   #   schedule:
-  #     interval: "monthly"
+  #     interval: "weekly"
   #   open-pull-requests-limit: 3
   #   labels:
   #     - "dependencies"
@@ -348,7 +348,7 @@ updates:
   # - package-ecosystem: "docker"
   #   directory: "/nodejs"
   #   schedule:
-  #     interval: "monthly"
+  #     interval: "weekly"
   #   open-pull-requests-limit: 3
   #   labels:
   #     - "dependencies"
@@ -361,7 +361,7 @@ updates:
   # - package-ecosystem: "docker"
   #   directory: "/nodejs/builder"
   #   schedule:
-  #     interval: "monthly"
+  #     interval: "weekly"
   #   open-pull-requests-limit: 3
   #   labels:
   #     - "dependencies"
@@ -374,7 +374,7 @@ updates:
   # - package-ecosystem: "docker"
   #   directory: "/perl"
   #   schedule:
-  #     interval: "monthly"
+  #     interval: "weekly"
   #   open-pull-requests-limit: 3
   #   labels:
   #     - "dependencies"
@@ -387,7 +387,7 @@ updates:
   # - package-ecosystem: "docker"
   #   directory: "/php7"
   #   schedule:
-  #     interval: "monthly"
+  #     interval: "weekly"
   #   open-pull-requests-limit: 3
   #   labels:
   #     - "dependencies"
@@ -400,7 +400,7 @@ updates:
   # - package-ecosystem: "docker"
   #   directory: "/php7/builder"
   #   schedule:
-  #     interval: "monthly"
+  #     interval: "weekly"
   #   open-pull-requests-limit: 3
   #   labels:
   #     - "dependencies"
@@ -413,7 +413,7 @@ updates:
   - package-ecosystem: "docker"
     directory: "/python"
     schedule:
-      interval: "monthly"
+      interval: "weekly"
     open-pull-requests-limit: 3
     labels:
       - "dependencies"
@@ -426,7 +426,7 @@ updates:
   - package-ecosystem: "docker"
     directory: "/python/builder"
     schedule:
-      interval: "monthly"
+      interval: "weekly"
     open-pull-requests-limit: 3
     labels:
       - "dependencies"
@@ -439,7 +439,7 @@ updates:
   - package-ecosystem: "docker"
     directory: "/python-fastapi"
     schedule:
-      interval: "monthly"
+      interval: "weekly"
     open-pull-requests-limit: 3
     labels:
       - "dependencies"
@@ -452,7 +452,7 @@ updates:
   - package-ecosystem: "docker"
     directory: "/python-fastapi/builder"
     schedule:
-      interval: "monthly"
+      interval: "weekly"
     open-pull-requests-limit: 3
     labels:
       - "dependencies"
@@ -465,7 +465,7 @@ updates:
   # - package-ecosystem: "docker"
   #   directory: "/ruby"
   #   schedule:
-  #     interval: "monthly"
+  #     interval: "weekly"
   #   open-pull-requests-limit: 3
   #   labels:
   #     - "dependencies"
@@ -478,7 +478,7 @@ updates:
   # - package-ecosystem: "docker"
   #   directory: "/ruby/builder"
   #   schedule:
-  #     interval: "monthly"
+  #     interval: "weekly"
   #   open-pull-requests-limit: 3
   #   labels:
   #     - "dependencies"
@@ -491,7 +491,7 @@ updates:
   # - package-ecosystem: "docker"
   #   directory: "/tensorflow-serving"
   #   schedule:
-  #     interval: "monthly"
+  #     interval: "weekly"
   #   open-pull-requests-limit: 3
   #   labels:
   #     - "dependencies"
